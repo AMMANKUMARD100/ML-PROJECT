@@ -1,0 +1,6 @@
+setup.py
+foicedetect.egg-info/PKG-INFO
+foicedetect.egg-info/SOURCES.txt
+foicedetect.egg-info/dependency_links.txt
+foicedetect.egg-info/top_level.txt
+venv/__init__.py

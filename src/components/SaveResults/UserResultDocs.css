@@ -1,0 +1,124 @@
+/* Container for all documents */
+.documents-container {
+  padding: 10em 0;
+  background-color: #212529;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #171B1D;
+}
+
+.view-storage-btn:hover {
+  text-decoration: underline;
+}
+
+/* Title */
+.documents-title {
+  font-family: "Poppins";
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Document List */
+.documents-list {
+  padding: 0 3em;
+  width: 100%;
+  /* max-width: 800px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.inset-shadow {
+  position: relative;
+  background: #ffffff; 
+ 
+}
+
+.inset-shadow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10rem; 
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+  height: 10rem; /* Adjust height to control the shadow area */
+  pointer-events: none; /* Ensures the shadow is not interactive */
+}
+
+/* Individual Document Card */
+
+.document-card {
+  
+  background:linear-gradient(135deg, #3e7a94, #B7E9FF);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.document-card-alt {
+  background: linear-gradient(135deg, #40484c, #171B1D);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Document Header */
+.document-header {
+  font-family: "Poppins";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.document-name {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #171B1D;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.document-id {
+  font-size: 1rem;
+  color: #171B1D;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Document Details */
+.document-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  color: #171B1D !important;
+}
